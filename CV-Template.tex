@@ -1,0 +1,140 @@
+\documentclass[10pt, letterpaper]{article}
+
+\input{cv-themes/theme_selection.tex}
+
+%----------------------------------------------------------------------------------------
+%	 THEMES
+%----------------------------------------------------------------------------------------
+
+% Define the desired theme out of the following: beige, blue, bw, coral, earth, framed, gray, minimal, onyx, plain
+% See screenshots in preview/ directory
+\theme{beige}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need a particular field, just remove the content leaving the command, e.g. \aboutdesc{}
+
+\name{DRONECON} % Your name
+\jobtitle{HACK NOW TO WIN TOMORROW} % Job title/career
+% \profilepic{dummy_pp.jpg} % Profile picture (supported only with "bw", "gray" and "framed" themes)
+\aboutdesc{\#Dronecon24 is a multi-day scrappathon. Teams will test their metal in violent and nonviolent ways. 
+\newline Themes: Hybrid Warfare, Drones, Robotics, Data, Signals, Cyber.} % Description for ABOUT ME section
+
+\location{Eglin AFB, FL} % Address/location
+\phone{850-883-6347} % Phone number
+\mail{96TW.PA.OfficeMailAccount\newline{} . . . . . . . . . @us.af.mil} % Mail
+\dateofbirth{} % Date of birth
+\drivinglicenses{} % Drivers license category
+\linkedin{} % \linkedin{\href{LINK}{DESCRIPTION}}
+\github{} % \github{\href{{LINK}{DESCRIPTION}}
+
+%----------------------------------------------------------------------------------------
+%	 SKILLS
+%----------------------------------------------------------------------------------------
+
+% Both proskills and perskills can be used separately or together. If you do not plan to use professional and personal skill charts, just remove the content leaving the command, e.g. \perskills{} or \proskills{}
+
+% Define professional skills (values are from interval [0,1])
+\proskills{}
+%\proskills{}
+
+% Define personal skills (values are from interval [0,1])
+\perskills{}
+%\perskills{}
+
+% Define language skills (values are from interval [0,5). If you do not plan to use the language skills chart, just remove the content leaving the command, e.g. \langskills{}
+% Language skill circles are designed to be included into the sidebar
+\langskills{{Robotics/5},{Air/4},{Ground/2},{BATTLE/5},{Field day/4},{Destruction/2},{Analytics/3},{Joint forces and allies /3},{Capture flag/3},{Hacking/4},{Trons/3},{Jousting/1},{LARPing/3},{Fun/5}}
+%\langskills{}
+
+\begin{document}
+
+\makeprofile % Print name & job description. Also prints out profile picture if it's supported by the theme
+
+\begincols
+
+%----------------------------------------------------------------------------------------
+%	 SIDEBAR
+%----------------------------------------------------------------------------------------
+% Use \subsection inside the sidebar
+
+% Print defined contact information
+% \makecontact{NAME FOR CONTACT SECTION}
+\makecontact{CONTACT INFO}
+
+% \makedob{NAME FOR DATE OF BIRTH SECTION}
+\makedob{DATE OF BIRTH}
+
+% \makelicense{NAME FOR ABOUT ME SECTION}
+\makeabout{WHAT IS IT???}
+
+% \makelicense{NAME FOR DRIVING LICENSE SECTION}
+\makelicense{DRIVING LICENSE}
+
+\subsection{FEATURES}
+\langcircles % Command for drawing language skill circles
+
+% \subsection{PERSONAL}
+% \perskills % Command for drawing personal skill bars.
+
+%\subsection{PROFESSIONAL}
+%\proskills % Command for drawing professional skill bars.
+
+%----------------------------------------------------------------------------------------
+%	 BODY
+%----------------------------------------------------------------------------------------
+% Use \section inside the body
+\switchcols % This command is used to switch to the document body
+
+\section{ACTIVITIES, CHALLENGES, AWARDS}
+
+% \begin{cvitem}{Education level}{College/High school}{Location}{Duration}
+% Description
+% \end{cvitem}
+
+\begin{enumerate}
+
+\item Junkyard wars: Hack together machines then complete challenges.
+
+\item Air Race: Timed trials and stunts around Pylons like the Red Bull Air Race.
+
+\item Field day: "Pro Day" style exercises, slalom, autocross challenges.
+
+\item BATTLE BOTS: Paintball, airsoft. Drone-augmented fireteams and small-unit skirmishes. A string of paint or water balloon bombs. Gladiator-style nets. Flying wrecking-balls. Heavy-duty hobbyist RC planes, jets, choppers.
+
+\item Drone swarm  and ground battles, as in Ender's Game. Forecasted outcome.
+
+\item Night ops: Night-vision. Fluorescent paint paintballs, airsoft rounds. 
+
+\item Countermeasures.  Smoke and mirrors. Decoy drones, chaff and flare (glitter bombs?). Spectrum warfare. Hobbyist rocket-drone targeting / shootdown.
+
+\item Ground control to Maj Tom: Predictive data hackathon on the ground. Network security / cyber-to-drone. Uplink / downlink with manned craft.
+
+\item Psyops: Leaflet dropping, skywriting, banner-towing, cyber air-dropping.
+
+\item Synchronized droning: Choreographed Vietnam-era football field air-ballets.
+
+\item Medieval Knights: Drone jousting, capture the guidon flag, LARPing.
+
+\item Spectrum shootout: Electronic warfare one-on-one cowboy duels.
+
+\item Intel: Surveillance, mapping, network sniffing, offensive cyber-from-drone.
+
+\item Sense and avoid: No visual, possible night ops, fly-by-sense challenges.
+
+\item Autonomy: Rat race / mouse maze style obstacle course. No humans.
+
+\item Easter egg challenges: Sleeper prizes, contests for the inquisitive drone.
+
+\item Science fair demo day: Show off creations, professional networking.
+
+\end{enumerate}
+
+\section{AWARDS}
+PEOPLES' CHOICE for best: Junkyard creation, paintball, team spirit / mascot, open-source documentation, psy-ops win, major destruction, LARPing costumes.
+
+COMANDANTE'S CUP for best: Overall team, pilot, battlefield innovation, shoot-down, cyber flag-captors, data / outcome forecasters, jousting, quidditch team.
+\fincols
+\end{document}
