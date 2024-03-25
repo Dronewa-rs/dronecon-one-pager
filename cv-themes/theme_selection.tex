@@ -117,6 +117,7 @@
 \newcommand{\location}[1]{\renewcommand{\location}{#1}}
 \newcommand{\phone}[1]{\renewcommand{\phone}{#1}}
 \newcommand{\mail}[1]{\renewcommand{\mail}{#1}}
+\newcommand{\publicaffairs}[1]{\publicaffairs{#1}}
 \newcommand{\drivinglicenses}[1]{\renewcommand{\drivinglicenses}{#1}}
 \newcommand{\github}[1]{\renewcommand{\github}{#1}}
 \newcommand{\linkedin}[1]{\renewcommand{\linkedin}{#1}}
@@ -182,18 +183,16 @@
 
 % Contact table
 \newcommand{\makecontact}[1]{%
-    \ifboolexpr{bool {altcont}}{}{%
-        \subsection{#1}
-
-        \renewcommand{\arraystretch}{1.2}
-        \begin{tabular}[t]{@{}Y{.1\columnwidth} @{\hskip 0.05\columnwidth}p{0.85\columnwidth}}
-            \ifthenelse{\equal{\location}{}}{}{\locicon & \location \\ }
-            \ifthenelse{\equal{\phone}{}}{}{\phoneicon & \phone \\ }
-            \ifthenelse{\equal{\mail}{}}{}{\mailicon & \href{mailto:\mail}{\mail} }
-            \ifthenelse{\equal{\linkedin}{}}{}{\\ \linkedinicon & \linkedin }
-            \ifthenelse{\equal{\github}{}}{}{\\ \githubicon & \github \\ }
-        \end{tabular}
-    }
+	\subsection{#1}
+	
+	\renewcommand{\arraystretch}{1.2}
+	\begin{tabular}[t]{@{}Y{.1\columnwidth} @{\hskip 0.05\columnwidth}p{0.85\columnwidth}}
+		\ifthenelse{\equal{\location}{}}{}{\locicon & \location \\ }
+		\ifthenelse{\equal{\phone}{}}{}{\phoneicon & \phone \\ }
+		\ifthenelse{\equal{\mail}{}}{}{\mailicon & \href{mailto:\mail}{96 TW Public Affairs email} \\ }
+		\ifthenelse{\equal{\linkedin}{}}{}{\linkedinicon & \linkedin \\ }
+		\ifthenelse{\equal{\github}{}}{}{\githubicon & \github \\ }
+	\end{tabular}
 }
 
 % Environment for listing out work experience and education
